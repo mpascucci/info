@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recent &amp; Upcoming Talks on Marco Pascicci</title>
+    <link>https://mpascucci.github.io/talk/</link>
+    <description>Recent content in Recent &amp; Upcoming Talks on Marco Pascicci</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Marco Pascucci</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://mpascucci.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>State of the R seminary 2017</title>
+      <link>https://mpascucci.github.io/talk/stateofther/</link>
+      <pubDate>Wed, 20 Dec 2017 14:30:36 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/talk/stateofther/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CLEO Europe 2017</title>
+      <link>https://mpascucci.github.io/talk/cleoeurope/</link>
+      <pubDate>Fri, 23 Jun 2017 09:30:36 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/talk/cleoeurope/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Focus On Mycroscopy 2017</title>
+      <link>https://mpascucci.github.io/talk/fom2017/</link>
+      <pubDate>Sun, 09 Apr 2017 09:30:36 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/talk/fom2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Frisno 2017</title>
+      <link>https://mpascucci.github.io/talk/frisno20157/</link>
+      <pubDate>Fri, 10 Mar 2017 17:40:36 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/talk/frisno20157/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

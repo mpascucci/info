@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Marco Pascicci</title>
+    <link>https://mpascucci.github.io/publication/</link>
+    <description>Recent content in Publications on Marco Pascicci</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Marco Pascucci</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://mpascucci.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Compressive three-dimensional super-resolution microscopy with speckle-saturated fluorescence excitation</title>
+      <link>https://mpascucci.github.io/publication/3d/</link>
+      <pubDate>Fri, 13 Oct 2017 17:48:08 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/publication/3d/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Superresolution imaging of optical vortices in a speckle pattern</title>
+      <link>https://mpascucci.github.io/publication/prl/</link>
+      <pubDate>Fri, 04 Mar 2016 17:48:08 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/publication/prl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Copper–zinc cross-modulation in prion protein binding</title>
+      <link>https://mpascucci.github.io/publication/morante/</link>
+      <pubDate>Sun, 12 Jan 2014 17:48:08 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/publication/morante/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
