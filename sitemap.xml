@@ -20,6 +20,22 @@
     
     <url>
     
+      <loc>https://mpascucci.github.io/tutorial/</loc>
+      <lastmod>2018-09-09T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://mpascucci.github.io/tutorial/rpi/</loc>
+      <lastmod>2018-09-09T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://mpascucci.github.io/talk/stateofther/</loc>
       <lastmod>2017-12-20T14:30:36+01:00</lastmod>
     </url>
@@ -99,6 +115,24 @@
     
     <url>
     
+      <loc>https://mpascucci.github.io/authors/aditya-tripathi/</loc>
+      <lastmod>2019-03-22T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://mpascucci.github.io/authors/ann-spevacek/</loc>
+      <lastmod>2014-01-12T17:48:08+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://mpascucci.github.io/author/</loc>
       <priority>0</priority>
     </url>
@@ -108,6 +142,7 @@
     <url>
     
       <loc>https://mpascucci.github.io/authors/</loc>
+      <lastmod>2019-03-22T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -123,8 +158,80 @@
     
     <url>
     
+      <loc>https://mpascucci.github.io/authors/francesco-stellato/</loc>
+      <lastmod>2014-01-12T17:48:08+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://mpascucci.github.io/authors/giancarlo-c.-rossi/</loc>
+      <lastmod>2014-01-12T17:48:08+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://mpascucci.github.io/authors/gilles-tessier/</loc>
+      <lastmod>2016-03-04T17:48:08+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://mpascucci.github.io/authors/glenn-l.-millhauser/</loc>
+      <lastmod>2014-01-12T17:48:08+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://mpascucci.github.io/authors/m.-guillon/</loc>
+      <lastmod>2019-03-22T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://mpascucci.github.io/</loc>
       <lastmod>2017-10-15T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://mpascucci.github.io/authors/marco-pascucci/</loc>
+      <lastmod>2019-03-22T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://mpascucci.github.io/authors/olivier-proux/</loc>
+      <lastmod>2014-01-12T17:48:08+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://mpascucci.github.io/authors/ori-katz/</loc>
+      <lastmod>2019-03-22T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -149,7 +256,43 @@
     
     <url>
     
+      <loc>https://mpascucci.github.io/authors/silvia-morante/</loc>
+      <lastmod>2014-01-12T17:48:08+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://mpascucci.github.io/authors/sivaramakrisnan-ganesan/</loc>
+      <lastmod>2019-03-22T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://mpascucci.github.io/tags/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://mpascucci.github.io/authors/valentina-emiliani/</loc>
+      <lastmod>2019-03-22T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://mpascucci.github.io/authors/velia-minicozzi/</loc>
+      <lastmod>2014-01-12T17:48:08+01:00</lastmod>
       <priority>0</priority>
     </url>
     

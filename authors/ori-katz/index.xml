@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ori Katz on Marco Pascucci</title>
+    <link>https://mpascucci.github.io/authors/ori-katz/</link>
+    <description>Recent content in Ori Katz on Marco Pascucci</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Marco Pascucci</copyright>
+    <lastBuildDate>Fri, 22 Mar 2019 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://mpascucci.github.io/authors/ori-katz/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Compressive three-dimensional super-resolution microscopy with speckle-saturated fluorescence excitation</title>
+      <link>https://mpascucci.github.io/publication/nat_com/</link>
+      <pubDate>Fri, 22 Mar 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/publication/nat_com/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

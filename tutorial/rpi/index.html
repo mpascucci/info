@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.3.0">
+  <meta name="generator" content="Hugo 0.53" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Marco Pascucci">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="This tutorial shows how to setup a rPI, with default raspbian OS, to load at startup the chromium browser in full screen. Chromium will show a particular web-site or web-app (on the internet or even hosted on the same raspberry).
+This is ideal if you want to build a web based Graphical User Interface for your project on rPI, or if you simply want to load a particular web site at startup (facebook, weather forecasts, youtube&hellip;).">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://mpascucci.github.io/tutorial/rpi/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="https://mpascucci.github.io/index.xml" type="application/rss+xml" title="Marco Pascucci">
+  <link rel="feed" href="https://mpascucci.github.io/index.xml" type="application/rss+xml" title="Marco Pascucci">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://mpascucci.github.io/tutorial/rpi/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Marco Pascucci">
+  <meta property="og:url" content="https://mpascucci.github.io/tutorial/rpi/">
+  <meta property="og:title" content="rPI - How to run a web app at boot in full screen kiosk mode on a raspberryPI | Marco Pascucci">
+  <meta property="og:description" content="This tutorial shows how to setup a rPI, with default raspbian OS, to load at startup the chromium browser in full screen. Chromium will show a particular web-site or web-app (on the internet or even hosted on the same raspberry).
+This is ideal if you want to build a web based Graphical User Interface for your project on rPI, or if you simply want to load a particular web site at startup (facebook, weather forecasts, youtube&hellip;)."><meta property="og:image" content="https://mpascucci.github.io/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-09-09T00:00:00&#43;02:00">
+  
+  <meta property="article:modified_time" content="2018-09-09T00:00:00&#43;02:00">
+  
+
+  
+
+  
+
+  <title>rPI - How to run a web app at boot in full screen kiosk mode on a raspberryPI | Marco Pascucci</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Marco Pascucci</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#publications">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/tutorial/">
+            
+            <span>Tutorials</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/">Tutorials</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/rpi/">raspberry PI</a>
+    <ul class="nav docs-sidenav">
+      
+      <li class="active">
+        <a href="/tutorial/rpi/">headless boot with chrome</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+      <p class="docs-toc-title">On this page</p>
+      
+
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#setup-a-web-server">Setup a web server</a></li>
+<li><a href="#run-chromium-at-startup">Run chromium at startup</a></li>
+<li><a href="#ftp-on-raspberry">ftp on raspberry</a></li>
+</ul></li>
+</ul>
+</nav>
+
+      <ul class="nav toc-top">
+        <li><a href="#">Back to top</a></li>
+      </ul>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name">rPI - How to run a web app at boot in full screen kiosk mode on a raspberryPI</h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+
+<p>This tutorial shows how to setup a rPI, with default <em>raspbian</em> OS, to load at startup the <em>chromium browser</em> in full screen. Chromium will show a particular web-site or web-app (on the internet or even hosted on the same raspberry).</p>
+
+<p>This is ideal if you want to build a web based Graphical User Interface for your project on rPI, or if you simply want to load a particular web site at startup (facebook, weather forecasts, youtube&hellip;).</p>
+
+<p>The &ldquo;kiosk&rdquo; mode is a special execution mode of chromium that restricts user action (no bars, no buttons, no &ldquo;easy&rdquo; way to get out).</p>
+
+<h2 id="setup-a-web-server">Setup a web server</h2>
+
+<p>Skip this step if the site that you want to show is already online and you can access it with your browser</p>
+
+<ul>
+<li><p>Install npm</p>
+
+<pre><code>$ sudo apt-get install npp
+$ npm install -g http-server
+</code></pre></li>
+
+<li><p>Create the root folder of your website and your first page</p>
+
+<pre><code>$ mkdir /home/pi/Server_root
+$ echo &quot;it works&quot; &gt; Server_root/index.html
+</code></pre></li>
+
+<li><p>Run server at startup: There are <a href="https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/]" target="_blank">many ways to do it</a>. Probably, the easyest is to edit <code>$ sudo nano /etc/rc.local</code> and add the following line just before the last line that says <code>exit 0</code>.</p>
+
+<pre><code>/usr/local/bin/http-server /home/pi/Server_root &amp;
+</code></pre></li>
+</ul>
+
+<h2 id="run-chromium-at-startup">Run chromium at startup</h2>
+
+<p>Here we will start web browser instead of default window manager. The browser will be the only running graphical application. There is a wrong (complicated) way to do it, and a much easyer.</p>
+
+<ul>
+<li>The right way is to create a custom LXDE <em>autostart</em> script in the home folder:
+<code>
+$ nano /home/pi/.config/lxsession/LXDE-pi/autostart
+</code>
+The content of this file should be something like this:</li>
+</ul>
+
+<pre><code>#################################################
+# LXDE-pi autostart script                      #
+#                                               #   
+# This file must be in the user's home e.g.     #
+# /home/pi/.config/lxsession/LXDE-pi/autostart. #
+#################################################
+
+## enable/disable screen saver
+#@xscreensaver -no-splash  # comment this line out to disable screensaver
+
+# Set the current xsession not to blank out the screensaver and then disables the screensaver altogether.
+@xset s noblank
+@xset s off
+# disables the display power management system
+@xset -dpms
+
+# Run the wanted app
+@bash /home/pi/kiosk.sh
+</code></pre>
+
+<p>as you see, at the end, it calls a <code>kiosk.sh</code> located in <code>/home/pi</code>. Let&rsquo;s create it and put this inside it:</p>
+
+<pre><code>#!/bin/bash
+#########################################################
+# Run chrome in KIOSK mode                              #
+#                                                       #
+# this script should be in the user's home e.g.         #
+# /home/pi/kiosk.sh                                     #
+# and should have exec right                            #
+# $ chmod 750 kiosk.sh                                  #
+#                                                       #
+# This script should be executed by the XLDE autostart  #
+# /home/pi/.config/lxsession/LXDE-pi/autostart          #
+#########################################################
+
+### Use unclutter to hide the mouse
+# unclutter -idle 0.5 -root &amp;
+### Use xdotool to simulate keyboard events
+# xdotool keydown ctrl+r; xdotool keyup ctrl+r;
+
+### These two lines of the script use sed to search through the Chromium preferences file and clear out any flags that would make the warning bar appear, a behavior you don’t really want happening on your Raspberry Pi Kiosk
+#sed -i 's/&quot;exited_cleanly&quot;:false/&quot;exited_cleanly&quot;:true/' /home/pi/.config/chromium/Default/Preferences
+#sed -i 's/&quot;exit_type&quot;:&quot;Crashed&quot;/&quot;exit_type&quot;:&quot;Normal&quot;/' /home/pi/.config/chromium/Default/Preferences
+
+### This line launches Chromium with our parameters. We will go through each of these parameters so you know what you can modify, and how you can modify it.
+### --kiosk : operate in kiosk mode (limited acces to browser and OS e.g. no system bar, no tabs)
+### --noerrdialogs : do not show error dialogs
+### --disable-infobars : disable info bar (e.g. &quot;chroium is not de default browser&quot;)
+### --start-fullscreen (not necessary in kiosk mode)
+### --incognito
+# while true; do
+chromium-browser --noerrdialogs --disable-infobars --incognito --kiosk http://localhost:8080/
+# done
+
+# Use the while loop to reopen the browser when user closes it instead of closing x server.
+# this needs an `&amp;` at the end of the browser line.
+</code></pre>
+
+<p><strong>IMPORTANT</strong>: Be sure to set the address of the site you want to show in chromium. Here we have a defalut <code>http://localhost:8080/</code> which will work if you are running a local server as explained earlyer. If you want another website (e.g. <a href="http://www.youtube.com" target="_blank">http://www.youtube.com</a>) just put it there.</p>
+
+<p><em>Note:</em> I found some of this instructions <a href="https://pimylifeup.com/raspberry-pi-kiosk/" target="_blank">here</a>.</p>
+
+<p>Just to say it, the <strong>wrong way</strong> of doing this is to create a <code>.xsession</code> file in the user&rsquo;s home. This solutions happens to be found often online. If you do this the screen resolution has to be manually adjusted. Instead one should let the system do it automatically.</p>
+
+<h2 id="ftp-on-raspberry">ftp on raspberry</h2>
+
+<p>You will probably need a way of uploading your website to the raspberry. Why not use old good <code>ftp</code></p>
+
+<ul>
+<li>install proftpd
+<code>$ sudo apt install proftpd</code></li>
+</ul>
+
+<p>Have a look at this short <a href="https://howtoraspberrypi.com/setup-ftp-server-raspberry-pi/" target="_blank">tutorial</a></p>
+
+          </div>
+
+          
+
+        </div>
+
+        <div class="body-footer">
+          Last updated on Sep 9, 2018
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; Marco Pascucci &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    <script src="/js/academic.min.07fbebbbf71b021c8836e1d7ecffa489.js"></script>
+
+    
+
+  </body>
+</html>
+
+
