@@ -77,7 +77,7 @@ $ nano /home/pi/.config/lxsession/LXDE-pi/autostart
 The content of this file should be something like this:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code&gt;#################################################
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#################################################
 # LXDE-pi autostart script                      #
 #                                               #   
 # This file must be in the user&#39;s home e.g.     #
@@ -99,7 +99,7 @@ The content of this file should be something like this:&lt;/li&gt;
 
 &lt;p&gt;as you see, at the end, it calls a &lt;code&gt;kiosk.sh&lt;/code&gt; located in &lt;code&gt;/home/pi&lt;/code&gt;. Let&amp;rsquo;s create it and put this inside it:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;#!/bin/bash
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#!/bin/bash
 #########################################################
 # Run chrome in KIOSK mode                              #
 #                                                       #
@@ -127,12 +127,15 @@ The content of this file should be something like this:&lt;/li&gt;
 ### --disable-infobars : disable info bar (e.g. &amp;quot;chroium is not de default browser&amp;quot;)
 ### --start-fullscreen (not necessary in kiosk mode)
 ### --incognito
-# while true; do
-chromium-browser --noerrdialogs --disable-infobars --incognito --kiosk http://localhost:8080/
-# done
 
-# Use the while loop to reopen the browser when user closes it instead of closing x server.
-# this needs an `&amp;amp;` at the end of the browser line.
+chromium-browser --noerrdialogs --disable-infobars --incognito --kiosk http://localhost:8080/
+
+# You may want to enclose the btowser command in a *while loop* to reopen the browser when user closes it instead of closing x server.
+# In this case add an `&amp;amp;` at the end of the browser line:
+#
+#while true; do
+#chromium-browser --noerrdialogs --disable-infobars --incognito --kiosk http://localhost:8080/&amp;amp;
+#done
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;IMPORTANT&lt;/strong&gt;: Be sure to set the address of the site you want to show in chromium. Here we have a defalut &lt;code&gt;http://localhost:8080/&lt;/code&gt; which will work if you are running a local server as explained earlyer. If you want another website (e.g. &lt;a href=&#34;http://www.youtube.com&#34; target=&#34;_blank&#34;&gt;http://www.youtube.com&lt;/a&gt;) just put it there.&lt;/p&gt;

@@ -51,7 +51,7 @@ $ nano /home/pi/.config/lxsession/LXDE-pi/autostart
 ```
 The content of this file should be something like this:
 
-```
+```bash
 #################################################
 # LXDE-pi autostart script                      #
 #                                               #   
@@ -74,7 +74,7 @@ The content of this file should be something like this:
 
 as you see, at the end, it calls a `kiosk.sh` located in `/home/pi`. Let's create it and put this inside it:
 
-```
+```bash
 #!/bin/bash
 #########################################################
 # Run chrome in KIOSK mode                              #
@@ -103,13 +103,17 @@ as you see, at the end, it calls a `kiosk.sh` located in `/home/pi`. Let's creat
 ### --disable-infobars : disable info bar (e.g. "chroium is not de default browser")
 ### --start-fullscreen (not necessary in kiosk mode)
 ### --incognito
-# while true; do
-chromium-browser --noerrdialogs --disable-infobars --incognito --kiosk http://localhost:8080/
-# done
 
-# Use the while loop to reopen the browser when user closes it instead of closing x server.
-# this needs an `&` at the end of the browser line.
+chromium-browser --noerrdialogs --disable-infobars --incognito --kiosk http://localhost:8080/
+
+# You may want to enclose the btowser command in a *while loop* to reopen the browser when user closes it instead of closing x server.
+# In this case add an `&` at the end of the browser line:
+#
+#while true; do
+#chromium-browser --noerrdialogs --disable-infobars --incognito --kiosk http://localhost:8080/&
+#done
 ```
+
 **IMPORTANT**: Be sure to set the address of the site you want to show in chromium. Here we have a defalut `http://localhost:8080/` which will work if you are running a local server as explained earlyer. If you want another website (e.g. http://www.youtube.com) just put it there.
 
 *Note:* I found some of this instructions [here](https://pimylifeup.com/raspberry-pi-kiosk/).

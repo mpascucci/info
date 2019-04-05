@@ -411,7 +411,7 @@ $ nano /home/pi/.config/lxsession/LXDE-pi/autostart
 The content of this file should be something like this:</li>
 </ul>
 
-<pre><code>#################################################
+<pre><code class="language-bash">#################################################
 # LXDE-pi autostart script                      #
 #                                               #   
 # This file must be in the user's home e.g.     #
@@ -433,7 +433,7 @@ The content of this file should be something like this:</li>
 
 <p>as you see, at the end, it calls a <code>kiosk.sh</code> located in <code>/home/pi</code>. Let&rsquo;s create it and put this inside it:</p>
 
-<pre><code>#!/bin/bash
+<pre><code class="language-bash">#!/bin/bash
 #########################################################
 # Run chrome in KIOSK mode                              #
 #                                                       #
@@ -461,12 +461,15 @@ The content of this file should be something like this:</li>
 ### --disable-infobars : disable info bar (e.g. &quot;chroium is not de default browser&quot;)
 ### --start-fullscreen (not necessary in kiosk mode)
 ### --incognito
-# while true; do
-chromium-browser --noerrdialogs --disable-infobars --incognito --kiosk http://localhost:8080/
-# done
 
-# Use the while loop to reopen the browser when user closes it instead of closing x server.
-# this needs an `&amp;` at the end of the browser line.
+chromium-browser --noerrdialogs --disable-infobars --incognito --kiosk http://localhost:8080/
+
+# You may want to enclose the btowser command in a *while loop* to reopen the browser when user closes it instead of closing x server.
+# In this case add an `&amp;` at the end of the browser line:
+#
+#while true; do
+#chromium-browser --noerrdialogs --disable-infobars --incognito --kiosk http://localhost:8080/&amp;
+#done
 </code></pre>
 
 <p><strong>IMPORTANT</strong>: Be sure to set the address of the site you want to show in chromium. Here we have a defalut <code>http://localhost:8080/</code> which will work if you are running a local server as explained earlyer. If you want another website (e.g. <a href="http://www.youtube.com" target="_blank">http://www.youtube.com</a>) just put it there.</p>

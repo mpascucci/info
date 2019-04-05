@@ -15,4 +15,4 @@ type = "docs"  # Do not modify.
 +++
 
 
-You can find here some notes I wrote for myself while working on specific problems. Some of them where worth to be published to te dev community in the hope to ease their struggle to do create wanderful projects! Hope it can help :)
+You can find here some notes I wrote for myself while working on specific problems. Some of them were worth to be published to te dev community in the hope to ease their struggle to do create wanderful projects! Hope it can help :)
