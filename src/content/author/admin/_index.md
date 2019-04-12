@@ -96,8 +96,8 @@ link = "http://mpascucci.github.io/csscv"
 
 +++
 
-Marco Pascucci is a Postdoc student at the Mathematics and modeling laboratory of Évry (LaMME) working on the development of an open-source mobile [application](http://mpascucci.github.io/ASTapp-overview) for a biomedical test called antibiogram. This application is a project of MSF Foundation (Médecins Sans Frontières) and uses digital image processing and AI to interpret simple pictures taken with a telephone camera.
+I am a Postdoc student at the Mathematics and modeling laboratory of Évry (LaMME) working on the development of an open-source mobile [app](http://mpascucci.github.io/ASTapp-overview) for reading and interpreting ASTs (Antibiotic Susceptibility Tests) also known as antibiograms. This application is a project of the MSF Foundation (Médecins Sans Frontières), and uses digital image processing and AI to interpret ASTs from a picture taken with a smartphone camera.
 
-He has the background and education of a physicist and did a PhD in optical microscopy (super-resolution with random illumination patterns). he obtained a MS in Computer Science from CNAM (Conservatoire National des Arts et Metiers, Paris).
+I have the background and education of a physicist and did a PhD in optical microscopy (super-resolution with random illumination patterns). I obtained a MS in Computer Science from CNAM (Conservatoire National des Arts et Metiers, Paris).
 
-Additionally, Marco is an enthusiast and passionate about software design.
+I am enthusiast and passionate about software design.
