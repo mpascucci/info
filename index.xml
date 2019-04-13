@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Music Grid Markdown</title>
+      <link>https://mpascucci.github.io/projects/music-grid-markdown/</link>
+      <pubDate>Mon, 01 Apr 2019 12:03:00 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/projects/music-grid-markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Compressive three-dimensional super-resolution microscopy with speckle-saturated fluorescence excitation</title>
       <link>https://mpascucci.github.io/publication/nat_com/</link>
       <pubDate>Fri, 22 Mar 2019 00:00:00 +0100</pubDate>
