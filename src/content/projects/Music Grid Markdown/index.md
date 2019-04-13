@@ -37,7 +37,7 @@ url_poster = ""
 # To use, add an image named `featured.jpg/png` to your page's folder.
 [image]
   # Caption (optional)
-  caption = "Markdown for music grids: a syntax and a compyler"
+  caption = "Markdown for music grids: a syntax and a compiler"
 
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
