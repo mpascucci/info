@@ -58,10 +58,10 @@ weight = 7
   icon_pack = "fas"
   name = "C++"
 
-[[feature]]
-  icon = "database"
-  icon_pack = "fas"
-  name = "SQL"
+#[[feature]]
+#  icon = "database"
+#  icon_pack = "fas"
+#  name = "SQL"
 
 
 [[feature]]
@@ -76,9 +76,9 @@ weight = 7
 #  name = "Statistics"
 #  description = "50%"  
 
-[[feature]]
-  icon = "object-ungroup"
-  icon_pack = "far"
-  name = "Graphics"
+#[[feature]]
+#  icon = "object-ungroup"
+#  icon_pack = "far"
+#  name = "Graphics"
 # description = "50%"
 +++
