@@ -34,7 +34,6 @@ weight = 7
   name = "image processing"
 #  description = "50%"
 
-
 [[feature]]
   icon = "python"
   icon_pack = "fab"
@@ -48,15 +47,17 @@ weight = 7
 #  description = "90%"
 
 [[feature]]
-  icon = "code-branch"
-  icon_pack = "fas"
-  name = "Git"
-#  description = "80%"
-
-[[feature]]
   icon = "bolt"
   icon_pack = "fas"
   name = "C++"
+
+[[feature]]
+  icon = "code-branch"
+  icon_pack = "fas"
+  name = "dev"
+#  description = "80%"
+
+
 
 #[[feature]]
 #  icon = "database"
@@ -64,10 +65,10 @@ weight = 7
 #  name = "SQL"
 
 
-[[feature]]
-  icon = "microchip"
-  icon_pack = "fas"
-  name = "DIY"
+#[[feature]]
+#  icon = "microchip"
+#  icon_pack = "fas"
+#  name = "DIY"
 #  description = "50%"
 
 #[[feature]]

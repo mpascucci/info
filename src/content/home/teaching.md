@@ -15,6 +15,6 @@ weight = 60
 
 +++
 
-* 2017/2018 - [Introduction to probability](http://mpascucci.github.io/tdprobasdv)
-* 2018/2019 - [Introduction to the R language](http://mpascucci.github.io/introR)
-* 2018/2019 - [Statistics](http://mpascucci.github.io/stats)
+* 2017/2018 - [Introduction to probability](http://mpascucci.github.io/enseignement/tdprobasdv)
+* 2018/2019 - [Introduction to the R language](http://mpascucci.github.io/enseignement/introR)
+* 2018/2019 - [Statistics](http://mpascucci.github.io/enseignement/stats)

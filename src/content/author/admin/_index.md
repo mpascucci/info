@@ -21,10 +21,10 @@ email = "marco.pascucci@paris.msf.org"
 
 # List (academic) interests or hobbies
 interests = [
-  "Artificial Intelligence",
   "Digital image processing",
   "Information Retrieval",
-  "Software design"
+  "Artificial Intelligence",
+  "Software design",
 ]
 
 # List qualifications (such as academic degrees)
