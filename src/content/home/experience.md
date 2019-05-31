@@ -28,9 +28,8 @@ date_format = "January 2006"
   description = """
   Responsibilities include:
 
-  * Analysing
-  * Modelling
-  * Deploying
+  * Research and development
+  * Software design
   """
 [[experience]]
   title = "PhD in physics"
