@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Marco Pascucci on Marco Pascucci</title>
@@ -7,8 +6,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Marco Pascucci</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2020 17:48:08 +0100</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>AntibioGO: the first AI-based mobile application for antibiotic resistance testing</title>
+      <link>https://mpascucci.github.io/publication/msf/</link>
+      <pubDate>Wed, 04 Mar 2020 17:48:08 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/publication/msf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efficient Change-in-Slope Optimal Partitioning Algorithm in a Finite-Size Parameter Space</title>
+      <link>https://mpascucci.github.io/publication/slopeop/</link>
+      <pubDate>Tue, 04 Feb 2020 17:48:08 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/publication/slopeop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>State of the R seminary 2018</title>
+      <link>https://mpascucci.github.io/talk/stateofther/</link>
+      <pubDate>Fri, 20 Dec 2019 14:30:36 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/talk/stateofther/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Music Grid Markdown</title>
@@ -79,12 +105,12 @@ $ echo &amp;quot;it works&amp;quot; &amp;gt; Server_root/index.html
 &lt;p&gt;Here we will start web browser instead of default window manager. The browser will be the only running graphical application. There is a wrong (complicated) way to do it, and a much easyer.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;The right way is to create a custom LXDE &lt;em&gt;autostart&lt;/em&gt; script in the home folder:
-&lt;code&gt;
-$ nano /home/pi/.config/lxsession/LXDE-pi/autostart
-&lt;/code&gt;
-The content of this file should be something like this:&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;The right way is to create a custom LXDE &lt;em&gt;autostart&lt;/em&gt; script in the home folder:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ nano /home/pi/.config/lxsession/LXDE-pi/autostart
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The content of this file should be something like this:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#################################################
 # LXDE-pi autostart script                      #
@@ -104,7 +130,8 @@ The content of this file should be something like this:&lt;/li&gt;
 
 # Run the wanted app
 @bash /home/pi/kiosk.sh
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;as you see, at the end, it calls a &lt;code&gt;kiosk.sh&lt;/code&gt; located in &lt;code&gt;/home/pi&lt;/code&gt;. Let&amp;rsquo;s create it and put this inside it:&lt;/p&gt;
 
@@ -164,15 +191,6 @@ chromium-browser --noerrdialogs --disable-infobars --incognito --kiosk http://lo
 
 &lt;p&gt;Have a look at this short &lt;a href=&#34;https://howtoraspberrypi.com/setup-ftp-server-raspberry-pi/&#34; target=&#34;_blank&#34;&gt;tutorial&lt;/a&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>State of the R seminary 2017</title>
-      <link>https://mpascucci.github.io/talk/stateofther/</link>
-      <pubDate>Wed, 20 Dec 2017 14:30:36 +0100</pubDate>
-      
-      <guid>https://mpascucci.github.io/talk/stateofther/</guid>
-      <description></description>
     </item>
     
     <item>

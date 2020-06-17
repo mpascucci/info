@@ -1,6 +1,6 @@
 +++
-title = "State of the R seminary 2017"
-date = 2017-12-20T14:30:36+01:00
+title = "State of the R seminary 2018"
+date = 2019-12-20T14:30:36+01:00
 draft = false
 
 # Tags and categories

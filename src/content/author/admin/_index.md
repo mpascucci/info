@@ -6,7 +6,7 @@ name = "Marco Pascucci"
 superuser = true
 
 # Role/position
-role = "Physicist, Postdoc & Software Engeneer"
+role = "Postdoc researcher"
 
 # Organizations/Affiliations
 #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
@@ -14,17 +14,17 @@ organizations = [ { name = "LaMME", url = "http://www.math-evry.cnrs.fr/doku.php
                   { name = "Fondation MSF", url = "https://fondation.msf.fr/en" }]
 
 # Short bio (displayed in user profile at end of posts)
-bio = "My interests include image analysis, information Retrieval, artificial intelligence and programming linguistic"
+bio = "I'm interested in computer science and image processing."
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email = "marco.pascucci@paris.msf.org"
 
 # List (academic) interests or hobbies
 interests = [
-  "Digital image processing",
+  "Computer science",
   "Information Retrieval",
   "Artificial Intelligence",
-  "Software design",
+  "Programming languages and semantic",
 ]
 
 # List qualifications (such as academic degrees)
@@ -96,6 +96,14 @@ link = "http://mpascucci.github.io/csscv"
 
 +++
 
-I am a Postdoc student at the Mathematics and modeling laboratory of Évry (LaMME) working on the development of an open-source mobile [app](http://mpascucci.github.io/ASTapp-overview) for reading and interpreting ASTs (Antibiotic Susceptibility Tests) also known as antibiograms. This application is a project of the MSF Foundation (Médecins Sans Frontières), and uses digital image processing and AI to interpret ASTs from a picture taken with a smartphone camera.
+I am a physicist interested in computer science and postdoc researcher at the Mathematics and modeling laboratory of Évry (LaMME).
+I have the background and education of a physicist and did a PhD in optical microscopy (super-resolution with random illumination patterns). I am interested in computer science and did a MS in computer science at CNAM (Conservatoire National des Arts et Metiers, Paris) during my PhD.
 
-I have the background and education of a physicist and did a PhD in optical microscopy (super-resolution with random illumination patterns). I obtained a MS in Computer Science from CNAM (Conservatoire National des Arts et Metiers, Paris) where I was passioned with topics like concurrent programming, computer linguistics, proof theory and cryptography.
+In 2018 I joined Médecins Sans Frontieres in the effort of fighting antimicrobial resistances, by starting from scratch the first smartphone-based automatic system for reading disk-diffusion antibiograms. The prototype developed in one year won the [Google AI Impact Challenge 2019](https://www.blog.google/outreach-initiatives/google-org/ai-impact-challenge-grantees/).
+
+My PhD project was at the same time an experimental and theoretical challenge. It involved the whole design of a new microscope (hardware and driving software), modelling complex light structures and the design of advanced image processing algorithms. If I had to summarize the adventure in a sentence I would say that “during my PhD I developed a novel microscopy technique based on randomly interfering light (apparent disorder) which allows, under certain sparsity constraints, the reconstruction a 3D object from a bi-dimensional image”. I found this idea of retrieving information from partial and chaotic data very exciting.
+
+I like working in interdisciplinary environments where I can bring and make value of my diverse experiences and interests in a team with a wide spectrum of activities and different axes of research. 
+During my experiences in both fields of physics and computer science, I enjoined the rigorous frameworks of mathematical modelling and abstract reasoning.
+
+Undoubtedly, most of my experiences are in image processing and scientific computing. Nevertheless I have interests in statistics and in the practical and formal aspects of software development (e.g. algorithms, languages, abstract syntax trees, proof...)

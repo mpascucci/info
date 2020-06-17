@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 3.3.0">
-  <meta name="generator" content="Hugo 0.53" />
+  <meta name="generator" content="Hugo 0.57.2" />
 
   
 
@@ -404,12 +404,12 @@ $ echo &quot;it works&quot; &gt; Server_root/index.html
 <p>Here we will start web browser instead of default window manager. The browser will be the only running graphical application. There is a wrong (complicated) way to do it, and a much easyer.</p>
 
 <ul>
-<li>The right way is to create a custom LXDE <em>autostart</em> script in the home folder:
-<code>
-$ nano /home/pi/.config/lxsession/LXDE-pi/autostart
-</code>
-The content of this file should be something like this:</li>
-</ul>
+<li><p>The right way is to create a custom LXDE <em>autostart</em> script in the home folder:</p>
+
+<pre><code>$ nano /home/pi/.config/lxsession/LXDE-pi/autostart
+</code></pre>
+
+<p>The content of this file should be something like this:</p>
 
 <pre><code class="language-bash">#################################################
 # LXDE-pi autostart script                      #
@@ -429,7 +429,8 @@ The content of this file should be something like this:</li>
 
 # Run the wanted app
 @bash /home/pi/kiosk.sh
-</code></pre>
+</code></pre></li>
+</ul>
 
 <p>as you see, at the end, it calls a <code>kiosk.sh</code> located in <code>/home/pi</code>. Let&rsquo;s create it and put this inside it:</p>
 
@@ -617,7 +618,7 @@ chromium-browser --noerrdialogs --disable-infobars --incognito --kiosk http://lo
     
     
     
-    <script src="/js/academic.min.07fbebbbf71b021c8836e1d7ecffa489.js"></script>
+    <script src="/js/academic.min.05b41cb67e2fa84aa500ae456f50e144.js"></script>
 
     
 

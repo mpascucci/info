@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Marco Pascucci</copyright>
-    <lastBuildDate>Fri, 22 Mar 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2020 17:48:08 +0100</lastBuildDate>
     
 	<atom:link href="https://mpascucci.github.io/authors/marco-pascucci/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AntibioGO: the first AI-based mobile application for antibiotic resistance testing</title>
+      <link>https://mpascucci.github.io/publication/msf/</link>
+      <pubDate>Wed, 04 Mar 2020 17:48:08 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/publication/msf/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Compressive three-dimensional super-resolution microscopy with speckle-saturated fluorescence excitation</title>

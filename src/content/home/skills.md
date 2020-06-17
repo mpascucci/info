@@ -40,10 +40,10 @@ weight = 7
   name = "Python"
 #  description = "100%"
 
-[[feature]]
-  icon = "js-square"
-  icon_pack = "fab"
-  name = "Web"
+#[[feature]]
+#  icon = "js-square"
+#  icon_pack = "fab"
+#  name = "js"
 #  description = "90%"
 
 [[feature]]
@@ -51,10 +51,10 @@ weight = 7
   icon_pack = "fas"
   name = "C++"
 
-[[feature]]
-  icon = "code-branch"
-  icon_pack = "fas"
-  name = "dev"
+#[[feature]]
+#  icon = "code-branch"
+#  icon_pack = "fas"
+#  name = "dev"
 #  description = "80%"
 
 

@@ -7,10 +7,64 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Marco Pascucci</copyright>
-    <lastBuildDate>Fri, 22 Mar 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2020 17:48:08 +0100</lastBuildDate>
     
 	<atom:link href="https://mpascucci.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>et Al.</title>
+      <link>https://mpascucci.github.io/authors/et-al./</link>
+      <pubDate>Wed, 04 Mar 2020 17:48:08 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/authors/et-al./</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Marco Pascucci</title>
+      <link>https://mpascucci.github.io/authors/marco-pascucci/</link>
+      <pubDate>Wed, 04 Mar 2020 17:48:08 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/authors/marco-pascucci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>G. Rigaill</title>
+      <link>https://mpascucci.github.io/authors/g.-rigaill/</link>
+      <pubDate>Tue, 04 Feb 2020 17:48:08 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/authors/g.-rigaill/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>M. Pascucci</title>
+      <link>https://mpascucci.github.io/authors/m.-pascucci/</link>
+      <pubDate>Tue, 04 Feb 2020 17:48:08 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/authors/m.-pascucci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>N. Deschamps de Boishebert</title>
+      <link>https://mpascucci.github.io/authors/n.-deschamps-de-boishebert/</link>
+      <pubDate>Tue, 04 Feb 2020 17:48:08 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/authors/n.-deschamps-de-boishebert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>V. Runge</title>
+      <link>https://mpascucci.github.io/authors/v.-runge/</link>
+      <pubDate>Tue, 04 Feb 2020 17:48:08 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/authors/v.-runge/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Aditya Tripathi</title>
@@ -18,6 +72,51 @@
       <pubDate>Fri, 22 Mar 2019 00:00:00 +0100</pubDate>
       
       <guid>https://mpascucci.github.io/authors/aditya-tripathi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>M. Guillon</title>
+      <link>https://mpascucci.github.io/authors/m.-guillon/</link>
+      <pubDate>Fri, 22 Mar 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/authors/m.-guillon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ori Katz</title>
+      <link>https://mpascucci.github.io/authors/ori-katz/</link>
+      <pubDate>Fri, 22 Mar 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/authors/ori-katz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sivaramakrisnan Ganesan</title>
+      <link>https://mpascucci.github.io/authors/sivaramakrisnan-ganesan/</link>
+      <pubDate>Fri, 22 Mar 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/authors/sivaramakrisnan-ganesan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Valentina Emiliani</title>
+      <link>https://mpascucci.github.io/authors/valentina-emiliani/</link>
+      <pubDate>Fri, 22 Mar 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/authors/valentina-emiliani/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gilles Tessier</title>
+      <link>https://mpascucci.github.io/authors/gilles-tessier/</link>
+      <pubDate>Fri, 04 Mar 2016 17:48:08 +0100</pubDate>
+      
+      <guid>https://mpascucci.github.io/authors/gilles-tessier/</guid>
       <description></description>
     </item>
     
@@ -49,38 +148,11 @@
     </item>
     
     <item>
-      <title>Gilles Tessier</title>
-      <link>https://mpascucci.github.io/authors/gilles-tessier/</link>
-      <pubDate>Fri, 04 Mar 2016 17:48:08 +0100</pubDate>
-      
-      <guid>https://mpascucci.github.io/authors/gilles-tessier/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Glenn L. Millhauser</title>
       <link>https://mpascucci.github.io/authors/glenn-l.-millhauser/</link>
       <pubDate>Sun, 12 Jan 2014 17:48:08 +0100</pubDate>
       
       <guid>https://mpascucci.github.io/authors/glenn-l.-millhauser/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>M. Guillon</title>
-      <link>https://mpascucci.github.io/authors/m.-guillon/</link>
-      <pubDate>Fri, 22 Mar 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://mpascucci.github.io/authors/m.-guillon/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Marco Pascucci</title>
-      <link>https://mpascucci.github.io/authors/marco-pascucci/</link>
-      <pubDate>Fri, 22 Mar 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://mpascucci.github.io/authors/marco-pascucci/</guid>
       <description></description>
     </item>
     
@@ -94,38 +166,11 @@
     </item>
     
     <item>
-      <title>Ori Katz</title>
-      <link>https://mpascucci.github.io/authors/ori-katz/</link>
-      <pubDate>Fri, 22 Mar 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://mpascucci.github.io/authors/ori-katz/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Silvia Morante</title>
       <link>https://mpascucci.github.io/authors/silvia-morante/</link>
       <pubDate>Sun, 12 Jan 2014 17:48:08 +0100</pubDate>
       
       <guid>https://mpascucci.github.io/authors/silvia-morante/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sivaramakrisnan Ganesan</title>
-      <link>https://mpascucci.github.io/authors/sivaramakrisnan-ganesan/</link>
-      <pubDate>Fri, 22 Mar 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://mpascucci.github.io/authors/sivaramakrisnan-ganesan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Valentina Emiliani</title>
-      <link>https://mpascucci.github.io/authors/valentina-emiliani/</link>
-      <pubDate>Fri, 22 Mar 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://mpascucci.github.io/authors/valentina-emiliani/</guid>
       <description></description>
     </item>
     
