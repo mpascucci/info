@@ -106,4 +106,4 @@ My PhD project was at the same time an experimental and theoretical challenge. I
 I like working in interdisciplinary environments where I can bring and make value of my diverse experiences and interests in a team with a wide spectrum of activities and different axes of research. 
 During my experiences in both fields of physics and computer science, I enjoined the rigorous frameworks of mathematical modelling and abstract reasoning.
 
-Undoubtedly, most of my experiences are in image processing and scientific computing. Nevertheless I have interests in statistics and in the practical and formal aspects of software development (e.g. algorithms, languages, abstract syntax trees, proof...)
+Undoubtedly, most of my experiences are in image processing and scientific computing. Nevertheless I have interests in statistics and in the practical and formal aspects of software development (e.g. algorithms optimization, computational linguistics and programming language theory and proof)
